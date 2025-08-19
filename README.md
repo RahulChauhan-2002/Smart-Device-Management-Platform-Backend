@@ -1,6 +1,8 @@
 # Curvvtech Backend Developer Assignment – Smart Device Management API
 
-A production-ready Node/Express + MongoDB backend that lets users register, authenticate, and manage IoT-style devices (logging, analytics, heartbeats). Designed for scalability, includes rate-limiting, background jobs, Docker support and automated tests.
+The Smart Device Management API is a comprehensive backend solution designed for managing a fleet of IoT devices. It provides a secure and scalable platform for user authentication, device registration, and real-time data handling, including device heartbeats, status logging, and usage analytics.
+
+Built with Node.js, Express, and MongoDB, the project is architected to be production-ready, featuring robust error handling, automated testing, rate limiting, and scalability.
 
 ---
 
