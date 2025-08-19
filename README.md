@@ -33,9 +33,6 @@ cp .env.example .env # fill in DB_URI, JWT_SECRET, etc.
 
 ### Local run
 npm run dev # nodemon reload
-### Docker run
-docker-compose up --build
-API available at `http://localhost:3000`.
 
 ---
 
