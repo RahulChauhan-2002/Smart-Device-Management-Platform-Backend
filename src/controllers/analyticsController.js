@@ -2,7 +2,7 @@ import DeviceLog from '../models/DeviceLog.js';
 import Device from '../models/Device.js';
 import { logValidation } from '../utils/validation.js';
 
-const createLog = async (req, res) => {
+export const createLog = async (req, res) => {
   try {
     const { error } = logValidation.validate(req.body);
     if (error) {
@@ -33,7 +33,7 @@ const createLog = async (req, res) => {
 
     res.status(201).json({
       success: true,
-      log: {
+      logs: {
         id: log._id,
         event: log.event,
         value: log.value,
@@ -48,7 +48,7 @@ const createLog = async (req, res) => {
   }
 };
 
-const getLogs = async (req, res) => {
+export const getLogs = async (req, res) => {
   try {
     const { limit = 10 } = req.query;
     
@@ -86,7 +86,7 @@ const getLogs = async (req, res) => {
   }
 };
 
-const getUsage = async (req, res) => {
+export const getUsage = async (req, res) => {
   try {
     const { range = '24h' } = req.query;
     
@@ -135,8 +135,3 @@ const getUsage = async (req, res) => {
 };
 
 
-export {
-  createLog,
-  getLogs,
-  getUsage
-};
