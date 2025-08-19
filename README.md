@@ -24,10 +24,10 @@ A production-ready Node/Express + MongoDB backend that lets users register, auth
 1. Node ≥ 18, npm ≥ 9  
 2. Docker & docker-compose (optional but recommended)
 
-### Clone & install
-git clone https://github.com/<your-handle>/curvvtech-device-backend.git
-cd curvvtech-device-backend
-npm install
+### Clone & install<br/>
+git clone https://github.com/<your-handle>/curvvtech-device-backend.git<br/>
+cd curvvtech-device-backend<br/>
+npm install<br/>
 cp .env.example .env # fill in DB_URI, JWT_SECRET, etc.
 
 
@@ -39,34 +39,29 @@ API available at `http://localhost:3000`.
 
 ---
 
-## 3 Environment Variables (`.env.example`)
-PORT=3000
-DB_URI=mongodb+srv://user:pass@cluster.mongodb.net/curvv
-JWT_SECRET=supersecret
-JWT_EXPIRE=7d
-JWT_COOKIE_EXPIRE=7 # days
-RATE_LIMIT_WINDOW=60 # seconds
+## 3 Environment Variables (`.env.example`)<br/>
+PORT=3000<br/>
+DB_URI=mongodb+srv://user:pass@cluster.mongodb.net/curvv<br/>
+JWT_SECRET=supersecret<br/>
+JWT_EXPIRE=7d<br/>
+JWT_COOKIE_EXPIRE=7 # days<br/>
+RATE_LIMIT_WINDOW=60 # seconds<br/>
 RATE_LIMIT_MAX=100
 
 ---
 
-## 4 Folder Structure
-curvvtech-device-backend/
-├─ src/
-│ ├─ config/ # db, rate-limiter
-│ ├─ controllers/ # route handlers
-│ ├─ services/ # business logic
-│ ├─ models/ # Mongoose schemas
-│ ├─ routes/ # express routers
-│ ├─ middleware/ # auth, validation, error-handler
-│ ├─ jobs/ # cron tasks (auto-deactivate)
-│ └─ utils/ # helpers
-├─ tests/ # jest + supertest
-├─ postman/ # Smart-Device.postman_collection.json
-├─ Dockerfile
-├─ docker-compose.yml
-├─ .github/ # CI workflow
-├─ .env.example
+## 4 Folder Structure<br/>
+curvvtech-device-backend/<br/>
+├─ src/<br/>
+│ ├─ config/ # db, rate-limiter<br/>
+│ ├─ controllers/ # route handlers<br/>
+│ ├─ services/ # business logic<br/>
+│ ├─ models/ # Mongoose schemas<br/>
+│ ├─ routes/ # express routers<br/>
+│ ├─ middleware/ # auth, validation, error-handler<br/>
+│ ├─ jobs/ # cron tasks (auto-deactivate)<br/>
+│ └─ utils/ # helpers<br/>
+├─ postman/ # Smart-Device.postman_collection.json<br/>
 └─ README.md
 
 
@@ -194,6 +189,3 @@ Environment variable `{{base_url}}` defaults to `http://localhost:3000`.
 * Swap Mongoose for Prisma + PostgreSQL  
 * Autoscaling deployment on AWS ECS/Fargate
 
----
-
-> **Delivered within the 72-hour deadline – happy coding!**
