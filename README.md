@@ -12,9 +12,6 @@ A production-ready Node/Express + MongoDB backend that lets users register, auth
 * **Validation:** Joi  
 * **Background jobs:** node-cron  
 * **Rate limiting:** express-rate-limit (100 req / min / user)  
-* **Testing:** Jest + Supertest  
-* **Containerisation:** Docker & docker-compose  
-* **Lint/format:** ESLint, Prettier  
 
 ---
 
