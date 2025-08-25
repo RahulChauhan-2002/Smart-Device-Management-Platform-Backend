@@ -1,4 +1,4 @@
-# Curvvtech Backend Developer Assignment – Smart Device Management API
+# Smart Device Management API
 
 The Smart Device Management API is a comprehensive backend solution designed for managing a fleet of IoT devices. It provides a secure and scalable platform for user authentication, device registration, and real-time data handling, including device heartbeats, status logging, and usage analytics.
 
